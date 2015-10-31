@@ -65,7 +65,7 @@
         return key;
     
 	NSMutableString *output = [NSMutableString stringWithString:components[0]];
-    for(int i = 1;i < components.count;i++)
+    for(unsigned int i = 1;i < components.count;i++)
         [output appendString:[[components objectAtIndex:i] capitalizedString]];
 	
 	return output;
